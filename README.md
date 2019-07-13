@@ -24,6 +24,7 @@ render() {
         values={['Segment1', 'Segment2', 'Segment3']}
         onChange={(currentIndex) => {}}
         disable={false}
+        selectedIndex={1}
       />
     </View>
   )
@@ -37,6 +38,13 @@ render() {
 |**`disable`**|`Boolean`|Enable / Disable the entire component. Default is false.|
 |**`values`**|`Array(String)`|The labels for the control's segment buttons, in order.|
 |**`onChange`**|`function`|Callback that is called when the user taps a segment.|
+|**`selectedIndex`**|`Number`|Index of the selected segment.|
+|**`offsetHeight`**|`Number`|Active Segment's offset height.|
+|**`style`**|`function`|Styles props of segment control.|
+|**`segmentControlStyle`**|`function`|Styles props of segment control.|
+|**`activeSegmentStyle`**|`function`|Styles props of active segment view.|
+|**`selectedTextStyle`**|`function`|Selected Segment's text style.|
+|**`unSelectedTextStyle`**|`function`|Unselected Segment's text style.|
 
 ## License
 
