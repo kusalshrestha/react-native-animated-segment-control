@@ -40,11 +40,11 @@ render() {
 |**`onChange`**|`function`|Callback that is called when the user taps a segment.|
 |**`selectedIndex`**|`Number`|Index of the selected segment.|
 |**`offsetHeight`**|`Number`|Active Segment's offset height.|
-|**`style`**|`function`|Styles props of segment control.|
-|**`segmentControlStyle`**|`function`|Styles props of segment control.|
-|**`activeSegmentStyle`**|`function`|Styles props of active segment view.|
-|**`selectedTextStyle`**|`function`|Selected Segment's text style.|
-|**`unSelectedTextStyle`**|`function`|Unselected Segment's text style.|
+|**`style`**|`Styles`|Styles props of segment control.|
+|**`segmentControlStyle`**|`Styles`|Styles props of segment control.|
+|**`activeSegmentStyle`**|`Styles`|Styles props of active segment view.|
+|**`selectedTextStyle`**|`Styles`|Selected Segment's text style.|
+|**`unSelectedTextStyle`**|`Styles`|Unselected Segment's text style.|
 
 ## License
 
