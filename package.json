@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-segment-control",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A custom `SegmentControl` component, pretty much similar to native's SegmentControl but with animation",
   "main": "index.js",
   "scripts": {
