@@ -4869,10 +4869,10 @@ react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
-react-native-animated-segment-control@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/react-native-animated-segment-control/-/react-native-animated-segment-control-1.0.5.tgz#01b61b4083edbb47d75e73cc8934f2b9491bd29b"
-  integrity sha512-rdp5yA5o3ShbukGziUJUxP//LaQrs+b15QZQU2ofVP+oXXtE/D93lVWukrQ7s2V76yDaZ3VxbEZOksD1AsLwiQ==
+react-native-animated-segment-control@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-native-animated-segment-control/-/react-native-animated-segment-control-1.0.7.tgz#292b4cae145dcdee13a30fad74c49222c319f3a2"
+  integrity sha512-c53ozImblbYJrZKR/TF1izg8j5DQUn6geVkxTS/lfBgjdUu4AQWzqwmaJa0E8063EytHuCY6AsHl0QYpIjLJ7g==
   dependencies:
     metro-react-native-babel-preset "^0.55.0"
 

@@ -12,7 +12,7 @@ class App extends Component {
       <View style={styles.container}>
         <SegmentControl
           values={['Segment1', 'Segment2', 'Segment3']}
-          selectedIndex={1}
+          selectedIndex={0}
           onChange={this.onSegmentValueChange}
         />
       </View>
