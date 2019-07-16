@@ -39,7 +39,7 @@ class SegmentControl extends React.Component {
     this.setState(
       prevState => ({
         selectedIndex: index,
-        activeSegmentPosition: { x: prevState.segmentDimension.width * (index - 1), y: 0 }
+        activeSegmentPosition: { x: -(this.state.segmentDimension.width * (this.props.values.length / 2 - 0.5)) + this.state.segmentDimension.width * index, y: prevState.activeSegmentPosition.y }
       }),
       animate
     )
@@ -56,7 +56,7 @@ class SegmentControl extends React.Component {
 
     const animate = () => {
       Animated.timing(this.state.positionAnimationValue, {
-        toValue: segmentWidth * (this.state.selectedIndex - 1),
+        toValue: -(segmentWidth * (this.props.values.length / 2 - 0.5)) + segmentWidth * this.state.selectedIndex,
         duration: 100
       }).start()
     }

@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <View style={styles.container}>
         <SegmentControl
-          values={['Segment1', 'Segment2', 'Segment3']}
-          selectedIndex={0}
+          values={['Segment1', 'Segment2', 'Segment3', 'Segment4',]}
+          selectedIndex={1}
           onChange={this.onSegmentValueChange}
         />
       </View>
