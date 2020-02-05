@@ -19,7 +19,7 @@ Segment.defaultProps = {
 
 Segment.propTypes = {
   title: PropTypes.string.isRequired,
-  textStyle: Text.propTypes.style,
+  textStyle: Text.propTypes.style.isRequired,
   onPress: PropTypes.func.isRequired,
   style: ViewPropTypes.style
 }
