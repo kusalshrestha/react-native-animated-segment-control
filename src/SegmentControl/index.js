@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, Animated, ViewPropTypes, Easing } from 'react-native'
+import { View, Animated, ViewPropTypes, Easing, Text } from 'react-native'
 
 import styles from './styles'
 import Segment from './Segment'
@@ -81,6 +81,7 @@ class SegmentControl extends React.Component {
         >
           {this.props.values.map((segment, index) => (
             <Segment
+              key={index}
               style={{ height: segmentHeight }}
               title={segment}
               textStyle={index !== this.state.selectedIndex ? unSelectedTextStyle : {...styles.activeText, ...selectedTextStyle}}
@@ -160,12 +161,12 @@ SegmentControl.propTypes = {
   /**
    * Selected Segment text style.
    */
-  selectedTextStyle: ViewPropTypes.style,
+  selectedTextStyle: Text.propTypes.style,
 
   /**
    * Unselected Segment text style.
    */
-  unSelectedTextStyle: ViewPropTypes.style,
+  unSelectedTextStyle: Text.propTypes.style,
 }
 
 export default SegmentControl
