@@ -20,6 +20,27 @@ class SegmentControl extends React.Component {
       positionAnimationValue: new Animated.Value(0)
     }
   }
+  
+  
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedIndex !== this.props.selectedIndex) {
+      const animate = () => {
+        Animated.timing(this.state.positionAnimationValue, {
+          toValue: this.state.activeSegmentPosition.x,
+          duration: 150,
+          easing: Easing.ease
+        }).start()
+      }
+
+      this.setState(
+          prevState => ({
+            selectedIndex: this.props.selectedIndex,
+            activeSegmentPosition: { x: prevState.segmentDimension.width * this.props.selectedIndex  + this.props.offsetHeight, y: prevState.activeSegmentPosition.y }
+          }),
+          animate
+      )
+    }
+  }
 
   /**
    * On segment change event.
