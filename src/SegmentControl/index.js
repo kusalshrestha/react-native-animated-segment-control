@@ -31,6 +31,7 @@ class SegmentControl extends React.Component {
       Animated.timing(this.state.positionAnimationValue, {
         toValue: this.state.activeSegmentPosition.x,
         duration: 150,
+        useNativeDriver: this.props.useNativeDriver,
         easing: Easing.ease
       }).start(() => this.props.onChange(index))
     }
@@ -56,7 +57,8 @@ class SegmentControl extends React.Component {
     const animate = () => {
       Animated.timing(this.state.positionAnimationValue, {
         toValue: segmentWidth * this.state.selectedIndex + this.props.offsetHeight,
-        duration: 100
+        duration: 100,
+        useNativeDriver: this.props.useNativeDriver,
       }).start()
     }
 
@@ -81,9 +83,10 @@ class SegmentControl extends React.Component {
         >
           {this.props.values.map((segment, index) => (
             <Segment
+              key={`key-${segment}`}
               style={{ height: segmentHeight }}
               title={segment}
-              textStyle={index !== this.state.selectedIndex ? unSelectedTextStyle : {...styles.activeText, ...selectedTextStyle}}
+              textStyle={index !== this.state.selectedIndex ? unSelectedTextStyle : selectedTextStyle}
               onPress={() => this.onSegmentSelection(index)}
             />
           ))}
@@ -113,7 +116,9 @@ SegmentControl.defaultProps = {
   segmentControlStyle: {},
   activeSegmentStyle: {},
   selectedTextStyle: {},
-  unSelectedTextStyle: {}
+  unSelectedTextStyle: {},
+  disable: false,
+  useNativeDriver: false
 }
 
 SegmentControl.propTypes = {
@@ -166,6 +171,11 @@ SegmentControl.propTypes = {
    * Unselected Segment text style.
    */
   unSelectedTextStyle: ViewPropTypes.style,
+
+  /**
+   * To enable useNativeDriver for smooth animations, current style throws error when set to true. Default value is `false`.
+   */
+  useNativeDriver: PropTypes.bool,
 }
 
 export default SegmentControl
