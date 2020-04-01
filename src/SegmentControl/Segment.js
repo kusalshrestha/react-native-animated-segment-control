@@ -15,12 +15,12 @@ const Segment = ({ title, style, textStyle, onPress }) => (
 
 Segment.defaultProps = {
   style: {},
-  textStyle: styles.activeText
+  textStyle: {}
 }
 
 Segment.propTypes = {
   title: PropTypes.string.isRequired,
-  textStyle: ViewPropTypes.style,
+  textStyle: Text.propTypes.style,
   onPress: PropTypes.func.isRequired,
   style: ViewPropTypes.style
 }

@@ -86,7 +86,7 @@ class SegmentControl extends React.Component {
               key={`key-${segment}`}
               style={{ height: segmentHeight }}
               title={segment}
-              textStyle={index !== this.state.selectedIndex ? unSelectedTextStyle : selectedTextStyle}
+              textStyle={index !== this.state.selectedIndex ? unSelectedTextStyle : {...styles.activeText, ...selectedTextStyle}}
               onPress={() => this.onSegmentSelection(index)}
             />
           ))}
