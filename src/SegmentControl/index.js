@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, Animated, ViewPropTypes, Easing } from 'react-native'
+import { View, Animated, ViewPropTypes, Easing, Text} from 'react-native'
 
 import styles from './styles'
 import Segment from './Segment'
@@ -165,12 +165,12 @@ SegmentControl.propTypes = {
   /**
    * Selected Segment text style.
    */
-  selectedTextStyle: ViewPropTypes.style,
+  selectedTextStyle: Text.propTypes.style,
 
   /**
    * Unselected Segment text style.
    */
-  unSelectedTextStyle: ViewPropTypes.style,
+  unSelectedTextStyle: Text.propTypes.style,
 
   /**
    * To enable useNativeDriver for smooth animations, current style throws error when set to true. Default value is `false`.
