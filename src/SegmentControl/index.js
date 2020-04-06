@@ -19,6 +19,47 @@ class SegmentControl extends React.Component {
       activeSegmentPosition: { x: props.offsetHeight, y: props.offsetHeight },
       positionAnimationValue: new Animated.Value(0)
     }
+
+    this.componentShouldReRender = false
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    if(this.componentShouldReRender) {
+      return;
+    }
+
+    if (!this.componentShouldReRender && nextProps.selectedIndex != this.state.selectedIndex) {
+      this.onParentStateChange(nextProps.selectedIndex)
+    }
+  }
+
+  /**
+   * Trigger change when state is changed from parent component
+   *
+   * @param {Number} index
+   */
+  onParentStateChange = index => {
+
+    this.componentShouldReRender = true
+
+    setTimeout(() => this.componentShouldReRender = false, 1000)
+
+    const animate = () => {
+      Animated.timing(this.state.positionAnimationValue, {
+        toValue: this.state.activeSegmentPosition.x,
+        duration: 150,
+        useNativeDriver: this.props.useNativeDriver,
+        easing: Easing.ease
+      }).start()
+    }
+
+    this.setState(
+      prevState => ({
+        selectedIndex: index,
+        activeSegmentPosition: { x: prevState.segmentDimension.width * index  + this.props.offsetHeight, y: prevState.activeSegmentPosition.y }
+      }),
+      animate
+    )
   }
 
   /**
