@@ -23,7 +23,7 @@ class SegmentControl extends React.Component {
     this.componentShouldReRender = false
   }
 
-  componentWillUpdate(nextProps, nextState) {
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
     if(this.componentShouldReRender) {
       return;
     }
