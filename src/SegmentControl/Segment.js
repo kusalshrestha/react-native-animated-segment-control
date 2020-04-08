@@ -14,12 +14,13 @@ const Segment = ({ title, style, textStyle, onPress }) => (
 )
 
 Segment.defaultProps = {
-  style: {}
+  style: {},
+  textStyle: {}
 }
 
 Segment.propTypes = {
   title: PropTypes.string.isRequired,
-  textStyle: ViewPropTypes.style.isRequired,
+  textStyle: Text.propTypes.style,
   onPress: PropTypes.func.isRequired,
   style: ViewPropTypes.style
 }
