@@ -4869,10 +4869,10 @@ react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
-react-native-animated-segment-control@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/react-native-animated-segment-control/-/react-native-animated-segment-control-1.0.7.tgz#292b4cae145dcdee13a30fad74c49222c319f3a2"
-  integrity sha512-c53ozImblbYJrZKR/TF1izg8j5DQUn6geVkxTS/lfBgjdUu4AQWzqwmaJa0E8063EytHuCY6AsHl0QYpIjLJ7g==
+react-native-animated-segment-control@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-animated-segment-control/-/react-native-animated-segment-control-1.0.9.tgz#48ff654f581e78949dcc360305f86c031ea14bd0"
+  integrity sha512-vs8iPg8P1mco6YzMQfVJWoUpk0DkGhANeXgzCsBVFxMbTmYwHUczPLJGf7SFnhkeZ9nnz7GUkVCZqnnK4s/Gbg==
   dependencies:
     metro-react-native-babel-preset "^0.55.0"
 
@@ -6180,9 +6180,9 @@ xtend@~4.0.1:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 "y18n@^3.2.1 || ^4.0.0":
   version "4.0.0"
