@@ -15,7 +15,7 @@ yarn add react-native-animated-segment-control
 
 ## Usage
 ```js
-import SegmentContorl from 'react-native-animated-segment-control';
+import SegmentControl from 'react-native-animated-segment-control';
 
 render() {
   return (
