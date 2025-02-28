@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, Animated, ViewPropTypes, Easing } from 'react-native'
+import { View, Animated, Easing, ViewStyle } from 'react-native'
 
 import styles from './styles'
 import Segment from './Segment'
@@ -145,27 +145,27 @@ SegmentControl.propTypes = {
   /**
    * Styles props of main wrapper
    */
-  style: ViewPropTypes.style,
+  style: PropTypes.shape(ViewStyle),
 
   /**
    * Styles props of segment control
    */
-  segmentControlStyle: ViewPropTypes.style,
+  segmentControlStyle: PropTypes.shape(ViewStyle),
 
   /**
    * Styles props of active segment
    */
-  activeSegmentStyle: ViewPropTypes.style,
+  activeSegmentStyle: PropTypes.shape(ViewStyle),
 
   /**
    * Selected Segment text style.
    */
-  selectedTextStyle: ViewPropTypes.style,
+  selectedTextStyle: PropTypes.shape(ViewStyle),
 
   /**
    * Unselected Segment text style.
    */
-  unSelectedTextStyle: ViewPropTypes.style,
+  unSelectedTextStyle: PropTypes.shape(ViewStyle)
 }
 
 export default SegmentControl
